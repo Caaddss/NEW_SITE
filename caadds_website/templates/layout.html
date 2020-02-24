@@ -1,14 +1,12 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — caadds_website</title>
+<title>{% block title %}{% endblock %}— Dantas</title>
 <body>
   <header>
-    <h1>caadds_website</h1>
+    <h1>Caroline Dantas</h1>
     <nav>
       <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
         {% for href, title in [
           ['/blog', 'Blog'],
           ['/projects', 'Projects'],
