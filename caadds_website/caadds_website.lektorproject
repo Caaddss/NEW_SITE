@@ -1,0 +1,15 @@
+[project]
+name = Dantas-Site
+url = http://carolinedantas.com/
+url_style = absolute
+
+[alternatives.pt]
+name = Português
+primary = yes
+locale = pt_BR
+
+
+[alternatives.en]
+name = English
+url_prefix = /en/
+locale = en
