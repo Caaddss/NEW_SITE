@@ -4,13 +4,13 @@
 <title>{% block title %}{% endblock %}— Dantas</title>
 <body>
   <header>
-    <h1>Caroline Dantas</h1>
-    <nav>
-      <ul class="nav navbar-nav">
+    <nav class="sidebar bar-block card animate-left" style="display:none" id="mySidebar">
+      <button class="bar-item button large" onclick="close_nav()">Close &times;</button>
+      <ul class="bar-item button">
         {% for href, title in [
           ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
+          ['/projetos', 'Projetos'],
+          ['/sobre', 'Sobre Mim']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
@@ -18,10 +18,30 @@
       </ul>
     </nav>
   </header>
-  <div class="page">
-    {% block body %}{% endblock %}
+  <div id="main">
+    <div class="teal">
+      <button id="openNav" class="button teal xlarge" onclick="open_nav()">&#9776;</button>
+      <div class="container" class="page">
+        {% block body %}{% endblock %}
+      </div>
+    </div>
   </div>
+
   <footer>
     &copy; Copyright 2020 by Caroline Dantas.
   </footer>
 </body>
+
+<script>
+  function open_nav() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+  }
+  function close_nav() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+  }
+</script>
