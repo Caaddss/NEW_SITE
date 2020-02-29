@@ -1,0 +1,140 @@
+.dashboard_container{
+    display: grid;
+    border-style: solid;
+    border-color: black;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 400px 200px 100px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+
+.dashboard_container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+
+.card_sobre{
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(3, 60px);
+    border-style: solid;
+    border-color: blueviolet;
+    
+}
+
+
+.card_blog{
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: 60px 150px 150px;
+    border-style: solid;
+    border-color: greenyellow;
+}
+
+.card_projetos{
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(2, 80px);
+    border-style: solid;
+    border-color: darkred;
+}
+
+.card_palestras{
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(2, 80px);
+    
+    border-style: solid;
+    border-color: yellow;
+}
+
+.card_sobre > h3{
+    text-align: center;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    padding:0px;
+    height:50px;
+    margin: unset;
+    
+}
+.card_photo{
+    border-style: solid;
+    border-color: blueviolet;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    
+}
+
+.card_brief_descr{
+    border-style: solid;
+    border-color: blueviolet;
+    grid-column: 4 / 6;
+    grid-row: 2 / 4;
+}
+
+
+.card_blog > h3{
+    text-align: center;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    padding:0px;
+    height:50px;
+    margin: unset;  
+}
+.card_blog_tuto{
+    border-style: solid;
+    border-color: greenyellow;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+.card_blog_serie{
+    border-style: solid;
+    border-color: greenyellow;
+    grid-column: 4 / 6;
+    grid-row: 3 / 2;
+}
+.card_blog_review{
+    border-style: solid;
+    border-color: greenyellow;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+.card_blog_xp{
+    border-style: solid;
+    border-color: greenyellow;
+    grid-column: 4 / 6;
+    grid-row: 3 / 4;
+}
+
+.card_projetos > h3{
+    text-align: center;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    padding:0px;
+    height:50px;
+    margin: unset;  
+}
+
+.card_proj_pod{
+    border-style: solid;
+    border-color: darkred;
+    grid-column: 1 / 2;
+    grid-row: 2/ 2;
+}
+.card_proj_canal{
+    border-style: solid;
+    border-color: darkred;
+    grid-column: 3 / 4;
+    grid-row: 2 / 2;
+}
+.card_proj_analises{
+    border-style: solid;
+    border-color: darkred;
+    grid-column: 5 / 6;
+    grid-row: 2 / 2;
+}
