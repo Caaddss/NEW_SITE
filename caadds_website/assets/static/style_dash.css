@@ -48,7 +48,7 @@
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: repeat(2, 80px);
-    
+   
     border-style: solid;
     border-color: yellow;
 }
