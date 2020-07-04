@@ -1,3 +1,12 @@
+{% macro render_category_nav(active=none) %}
+  <ul>
+  {% for category in site.query('/blog-categories') %}
+    <li{% if category._id == active %} class="active"{% endif
+      %}><a href="{{ category|url }}">{{ category.name }}</a></li>
+  {% endfor %}
+  </ul>
+{% endmacro %}
+
 {% macro render_blog_post(post, from_index=false) %}
   <div class="blog-post">
   {% if from_index %}
@@ -17,4 +26,8 @@
   </p>
   {{ post.body }}
   </div>
+{% endmacro %}
+
+{% macro render_blog_list(post) %}
+  <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
 {% endmacro %}

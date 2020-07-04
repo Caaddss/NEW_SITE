@@ -4,6 +4,8 @@
 {% block title %}Projects{% endblock %}
 {% block body %}
   <h1>Projects</h1>
-  {{ render_category_nav(active=none) }}
   {{ render_project_list(this.children) }}
+
+  <h1>Projects for Categories</h1>
+  {{ render_category_nav(active=none) }}
 {% endblock %}
