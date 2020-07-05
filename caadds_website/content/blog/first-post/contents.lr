@@ -4,7 +4,11 @@ pub_date: 2020-02-24
 ---
 author: Caroline Dantas
 ---
-body: This is an example blog post.  Not much here but that's not the point :)
+body:
+
+This is an example blog post.  Not much here but that's not the point :)]
+
+![Spyder IDE logo, a spiderweb overlaid by a red snake](iconfinder_25_social_2609558.png)
 ---
 categories: tutoriais
 ---

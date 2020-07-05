@@ -3,4 +3,9 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   {{ render_blog_post(this) }}
-{% endblock %}
+  {% for image in this.attachments.images %}
+    <div class="image"><img src="{{ image|url }}"></div>
+    <p><strong>Camera:</strong> {{ image.description}}
+  {% endfor %}    
+
+  {% endblock %}
