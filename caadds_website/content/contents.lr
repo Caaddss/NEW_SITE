@@ -1,6 +1,3 @@
-_template: page.html
-title:  Caroline Dantas 
+_template: index.html
 ---
-body:
-
-
+body: 
