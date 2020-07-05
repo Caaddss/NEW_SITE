@@ -26,6 +26,14 @@
   </p>
   {{ post.body }}
   </div>
+  <img class="blog-image" id="blog-image-link-{{ index }}" alt="" src=
+    {%- if post.image -%}
+      
+      "/blog/{{ post._id }}/{{ post.image }}"
+    {%- else -%}
+    ''
+    {%- endif -%}
+     />
 {% endmacro %}
 
 {% macro render_blog_list(post) %}
