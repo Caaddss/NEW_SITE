@@ -7,41 +7,116 @@
 <body>
    <div class='dashboard_container'>
        <div class='card_sobre'>
-            <h3>Sobre</h3>
+        
                 <div class="card_photo">
                   <div class="image">
-                    <img src="{{ base_url }}static/images/bio.jpg" alt="" width="auto" height="100">
+                    <img src="{{ base_url }}static/images/bio.jpg" alt="" width="auto" height="300">
                   </div>  
                 </div>
-            <div class="card_brief_descr">descricao</div>
+            <div class="card_brief_descr">
+                <p>
+                    Olá, sou a Caroline Dantas, mas pode me chamar de Caaddss, sou desenvolvedora Python e 
+                    Cientista de Dados. Entusiasta dos estudos de Inteligência Artificial tento entender
+                    essas descobertas através da ótica da neurociência. Você encontra aqui meus textos, como
+                    também meus projetos.
+                </p>
+            </div>
+        </div>
+        <div class="breve_historico">
+            <h4>Breve Histórico</h4>
+            <div class="timeline">
+                <div class="entry">
+                    <h1>2013</h1>
+                    Primeiros passos em programação<br> 
+                    com java
+                </div>
+                <div class="entry">
+                    <h1>2015</h1>
+                    Começando com Python
+                </div>
+                <div class="entry">
+                    <h1>2016</h1>
+                    Programação em Python : Inserindo mulheres na Tecnologia<br>
+                    Projeto de extensão na Universidade Federal do ABC
+                </div>
+                <div class="entry">
+                    <h1>2017</h1>
+                    Menção Honrosa<br>
+                    III Workshop de Ensino em Pensamento Computacional<br>
+                    Algoritmos e Programação - WAlgProg/2017 - CBIE.
+                </div>
+            
+                <div class="entry">
+                    <h1>2019</h1>
+                    Embaixadora do SciPy-Latin America no Brasil 
+                </div>
+            </div>
+            <!-- <div class="contador">
+                <p class='palestras'>
+
+                </p>
+                <p class='workshops'>
+
+                </p>
+            </div> -->
         </div>
         <div class='card_blog'>
-            <h3>Blog</h3>
-            <div class="card_blog_tuto">tutorial</div>
-            <div class="card_blog_serie">series</div>
-            <div class="card_blog_xp">experiencia</div>
-            <div class="card_blog_review">review</div>
+            <div class="card_blog_tuto">
+                <img src="{{ base_url }}static/images/Tutorial.png" alt="" width="auto" height="80">
+            </div>
+            <div class="card_blog_serie">
+                <img src="{{ base_url }}static/images/Series.png" alt="" width="auto" height="80">
+
+            </div>
+            <div class="card_blog_xp">
+                <img src="{{ base_url }}static/images/Experiencias.png" alt="" width="auto" height="80">
+
+            </div>
+            <div class="card_blog_review">
+                <img src="{{ base_url }}static/images/Reviews.png" alt="" width="auto" height="80">
+            </div>
         </div>
         <div class='card_projetos'>
             <h3>Projetos</h3>
             <div class="card_proj_pod">
                 <img src="{{ base_url }}static/images/refatorando.png" alt="" width="auto" height="50">
-
+                <p>
+                    Seu podcast sobre História e Tecnologia, como seus impactos e desenvolvimento, 
+                    refatorando sua visão sobre como chegamos ao hoje
+                </p>    
             </div>
             <div class="card_proj_canal">
                 <img src="{{ base_url }}static/images/dev_friend.png" alt="" width="auto" height="50">
+                <p>
+                    Canal do youtube onde você encontra séries de vídeo sobre desenvolvimento de software,
+                    bem aos moldes de conversa entre amigos <br>
+                </p>
                 <img src="{{ base_url }}static/images/Caadds.png" alt="" width="auto" height="50">
+                <p>
+                    Canal da Twitch para ensino de Ciência de Dados, python 
+                </p>    
             </div>
-            <div class="card_proj_analises">open data</div>
-
-        </div>
-
-        <div class='card_palestras'>
-            <h3>Palestras</h3>
-        </div>
-         
+            <div class="card_proj_analises">
+                <img src="{{ base_url }}static/images/logo.png" alt="" width="auto" height="50">
+                <p>
+                    Que os dados são o novo petroleo, isso já sabemos, mas e se eles também fossem usados como 
+                    ferramentas de despertar social? Essa é a ideia do BPD, libertar dados trazendo os recortes 
+                    raciais para a discussão
+                </p>    
+            </div>
+        </div>        
+        
    </div>
 
-
+   <footer>
+        <div class='redes_sociais'>
+            <a href="https://twitter.com/_caaddss"><img src="{{ base_url }}/static/images/twitter.png" alt="twitter" width="auto" height="50"></a>
+            <a href="mailto:dantascaroline@outlook.com?subject=Me Ajuda ai Caaddss"><img src="{{ base_url }}/static/images/mail.png" width="auto" height="50"></a>
+            <a href="https://github.com/Caaddss/"><img src="{{ base_url }}/static/images/GitHub_logo.png" width="auto" height="50"></a>
+       
+           &copy; Copyright 2020 by Caroline Dantas.
+       </div>
+    
+  </footer>
 </body>
 
